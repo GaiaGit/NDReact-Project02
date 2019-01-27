@@ -47,3 +47,4 @@ Duplicated usernames are not allowed and a simple user validation is included.
 
 ## Notes
 Avatars were created with http://www.hexatar.com/
+react.semantic-ui.com was used to improve the design.
