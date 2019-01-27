@@ -11,10 +11,12 @@ class UserRegister extends Component {
     alert: false,
     duplicated: false
   };
-
+  // Gets selected avatar image
   selectAvatar = (ev,img) => this.setState({avatar:img});
+  // Disables paste name to control the validation
   disablePaste = (ev) => { ev.preventDefault(); return false; }
 
+  // Checks user name [No duplicated username | Valid name]
   getUsername = (ev) => {
     this.setState({username:ev.target.value});
 
@@ -31,16 +33,19 @@ class UserRegister extends Component {
     }
   }
 
+  // Validates duplicated username
   duplicatedUsername = (name) => {
     const {users} = this.props;
     let username = name.toLowerCase().replace(/\s/g,'');
     return Object.keys(users).includes(username.toLowerCase().replace(/\s/g,''));
   }
 
+  // Min 6 characters length & Not allowed a number as first character
   isValidUsername = (username) => {
     return isNaN(username.charAt(0)) && username.length > 5;
   }
 
+  // Saves new user and redirects user selection page
   addNewUser = (ev)  => {
     ev.preventDefault();
     const {username, avatar} = this.state;

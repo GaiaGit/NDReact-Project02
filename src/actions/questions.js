@@ -29,7 +29,6 @@ export function saveQuestionAnswer({authedUser,qid,answer}) {
   }
 }
 
-// UPDATE users & questions DATA
 export function handleSaveQuestion(question) {
   return (dispatch) => {
     dispatch(showLoading());
