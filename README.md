@@ -1,30 +1,32 @@
-# WHOULD YOU RATHER?
-## Udacity Nanodegree Project
+# Whould you rather?
+
+App that lets a user play the “Would You Rather?” game. The game goes like this: A user is asked a question in the form: “Would you rather [option A] or [option B] ?”. Answering "neither" or "both" is against the rules. 
 
 ## GETTING STARTED
+This project was bootstrapped with [Create React App] (https://github.com/facebookincubator/create-react-app).
+You can find more information on how to perform common tasks [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
+
+* PRE-REQUISITES
+~~~
+NodeJS
+~~~
+
+* Clone this repository project
+* Install all project dependencies with
+~~~
+$ npm install
+~~~
+* Launch app with
+~~~
+$ npm start
+~~~
+* Live project will be available at
+~~~
+http://localhost:3000/
+~~~
 
 
-## Available Scripts
+## PROJECT SPECIFICATIONS
+## Data Management
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+The provided file [`DATA_.js`](src/DATA_.js) contains the methods and default data to manage as API connection.
