@@ -1,6 +1,6 @@
 # Whould you rather?
-
-App that lets a user play the “Would You Rather?” game. The game goes like this: A user is asked a question in the form: “Would you rather [option A] or [option B] ?”. Answering "neither" or "both" is against the rules. 
+My project complete the module React&Redux.
+The App lets a user play the “Would You Rather?” game. The game goes like this: A user is asked a question in the form: “Would you rather [option A] or [option B] ?”. Answering "neither" or "both" is against the rules.
 
 ## GETTING STARTED
 This project was bootstrapped with [Create React App] (https://github.com/facebookincubator/create-react-app).
@@ -12,6 +12,13 @@ NodeJS
 ~~~
 
 * Clone this repository project
+~~~
+$ git clone https://github.com/GaiaGit/NDReact-Project02.git
+~~~
+* Enter to the local project directory
+~~~
+$ cd NDReact-Project02
+~~~
 * Install all project dependencies with
 ~~~
 $ npm install
@@ -20,7 +27,7 @@ $ npm install
 ~~~
 $ npm start
 ~~~
-* Live project will be available at
+* Live project will be available at browser url
 ~~~
 http://localhost:3000/
 ~~~
@@ -30,3 +37,6 @@ http://localhost:3000/
 ## Data Management
 
 The provided file [`DATA_.js`](src/DATA_.js) contains the methods and default data to manage as API connection.
+
+## Notes
+Avatars were created with http://www.hexatar.com/
