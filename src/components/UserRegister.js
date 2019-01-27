@@ -1,5 +1,6 @@
 import React,{ Component } from 'react';
 import { Header,Segment,Input,Button,Container,Image,Label } from 'semantic-ui-react';
+import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { handleAddUser } from '../actions/users';
 
@@ -99,6 +100,9 @@ class UserRegister extends Component {
                 REGISTER
               </Button>
             </Container>
+          </Segment>
+          <Segment align="center">
+            Already Registered User? Click here to <Link to="/login">Login</Link>
           </Segment>
         </div>
       </div>
