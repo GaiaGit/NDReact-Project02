@@ -38,5 +38,10 @@ http://localhost:3000/
 
 The provided file [`DATA_.js`](src/DATA_.js) contains the methods and default data to manage as API connection.
 
+## Additional Features
+### REGISTER
+A register component was included to create new users by entering a user name and selecting a default avatar.
+Duplicated usernames are not allowed and a simple user validation is included.
+
 ## Notes
 Avatars were created with http://www.hexatar.com/
