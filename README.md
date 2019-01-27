@@ -1,5 +1,6 @@
 # Whould you rather?
 My project complete the module React&Redux.
+
 The App lets a user play the “Would You Rather?” game. The game goes like this: A user is asked a question in the form: “Would you rather [option A] or [option B] ?”. Answering "neither" or "both" is against the rules.
 
 ## GETTING STARTED
@@ -37,6 +38,7 @@ http://localhost:3000/
 ## Data Management
 
 The provided file [`DATA_.js`](src/DATA_.js) contains the methods and default data to manage as API connection.
+
 
 ## Additional Features
 ### REGISTER
