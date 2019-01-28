@@ -30,30 +30,29 @@ class Login extends Component {
 
     return(
       <div className="login-container">
-
-          <Card>
-            <Card.Content>
-              <Card.Meta>
-                <span className='date'>Welcome to</span>
-              </Card.Meta>
-              <Card.Header>WOULD YOU RATHER?</Card.Header>
-            </Card.Content>
-            <Card.Content className="loginImg">
-              <Image src={wyrimg} />
-            </Card.Content>
-            <Card.Content extra>
-              <Dropdown text='LOG IN' icon='user circle' floating labeled button className='icon'>
-                <Dropdown.Menu>
-                  <Dropdown.Header content='Select your user' />
-                  {
-                    usersIds.map( id =>
-                      <Dropdown.Item key={id} text={users[id].name} image={users[id].avatarURL} onClick={(e) => this.selectUser(e,id)} />
-                    )
-                  }
-                </Dropdown.Menu>
-              </Dropdown>
-            </Card.Content>
-          </Card>
+        <Card>
+          <Card.Content>
+            <Card.Meta>
+              <span className='date'>Welcome to</span>
+            </Card.Meta>
+            <Card.Header>WOULD YOU RATHER?</Card.Header>
+          </Card.Content>
+          <Card.Content className="loginImg">
+            <Image src={wyrimg} />
+          </Card.Content>
+          <Card.Content extra>
+            <Dropdown text='LOG IN' icon='user circle' floating labeled button className='icon'>
+              <Dropdown.Menu>
+                <Dropdown.Header content='Select your user' />
+                {
+                  usersIds.map( id =>
+                    <Dropdown.Item key={id} text={users[id].name} image={users[id].avatarURL} onClick={(e) => this.selectUser(e,id)} />
+                  )
+                }
+              </Dropdown.Menu>
+            </Dropdown>
+          </Card.Content>
+        </Card>
       </div>
     )
   }
