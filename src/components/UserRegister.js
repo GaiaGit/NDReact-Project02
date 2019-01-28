@@ -51,7 +51,8 @@ class UserRegister extends Component {
     ev.preventDefault();
     const {username, avatar} = this.state;
     const {dispatch} = this.props;
-    dispatch(handleAddUser({username,avatar})).then(() => this.props.history.push('/'));
+    dispatch(handleAddUser({username,avatar}))
+      .then(() => this.props.history.push('/'));
   }
 
   render() {

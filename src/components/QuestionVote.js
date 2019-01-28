@@ -1,7 +1,7 @@
 import React,{ Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { Header,Segment,Button,Form,Image,Divider } from 'semantic-ui-react';
+import { Header,Segment,Button,Form,Image,Divider,Message } from 'semantic-ui-react';
 import { handleSaveQuestionAnswer } from '../actions/questions';
 
 class QuestionVote extends Component {
@@ -23,6 +23,16 @@ class QuestionVote extends Component {
   render() {
     const {question, questions, users} = this.props;
     const {value} = this.state;
+
+    if(!Object.keys(questions).includes(question)){
+      return (
+        <div className="wrapper">
+          <Message negative>
+            <Message.Header>Sorry, this question doesn't exist.</Message.Header>
+          </Message>
+        </div>
+      )
+    }
 
     return(
       <div className="vote-question-container wrapper">
